@@ -1,18 +1,42 @@
-flowchart TD
-    Login["LOGIN"] -->|Autenticação| Aplicacao["APLICAÇÃO"]
+erDiagram
+    USUARIO ||--o{ POKEMON : consulta
+    USUARIO ||--o{ TIME : consulta
+    USUARIO ||--o{ TORNEIO : consulta
+    TIME }o--|{ POKEMON : possui
+    TORNEIO ||--o{ RESULTADO : possui
 
-    Aplicacao --> Pokemon["Pokémon no Meta"]
-    Aplicacao --> Times["Times no Meta"]
-    Aplicacao --> Torneios["Resultados de Torneios"]
+    USUARIO {
+        int id_usuario PK
+        string nome
+        string email UK
+        string senha
+    }
 
-    Pokemon --> Detalhes["Detalhes do Pokémon"]
+    POKEMON {
+        int id_pokemon PK
+        string nome
+        string imagem
+        float percentual_uso
+        string movimentos
+        string habilidades
+        string itens
+    }
 
-    classDef auth fill:#fef2f2,stroke:#f87171,stroke-width:2px
-    classDef app fill:#eef2ff,stroke:#818cf8,stroke-width:2px
-    classDef feature fill:#f0fdfa,stroke:#2dd4bf,stroke-width:1.5px
-    classDef detail fill:#fff7ed,stroke:#fb923c,stroke-width:1.5px
+    TIME {
+        int id_time PK
+        string nome
+        string pokemon
+        float percentual_uso
+    }
 
-    class Login auth
-    class Aplicacao app
-    class Pokemon,Times,Torneios feature
-    class Detalhes detail
+    TORNEIO {
+        int id_torneio PK
+        string nome
+        date data
+    }
+
+    RESULTADO {
+        int id_resultado PK
+        string jogador_ou_equipe
+        string colocacao
+    }

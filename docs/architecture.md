@@ -1,4 +1,12 @@
-````mermaid
+# 🛠️ Especificação Técnica (Tech Spec) - Watchlog
+
+Este documento detalha a arquitetura técnica, o modelo de dados e os contratos de API (via JSON Server) necessários para o funcionamento do sistema Watchlog.
+
+## 1. Modelo de Dados (Diagrama ER)
+
+Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura do nosso "banco de dados" (`db.json`) e como as informações se conectam.
+
+```mermaid
 erDiagram
     USUARIO ||--o{ POKEMON : consulta
     USUARIO ||--o{ TIME : consulta

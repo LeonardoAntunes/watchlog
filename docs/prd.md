@@ -5,7 +5,7 @@
 - Nome da aplicação: Watchlog
 
 ## 2. Descrição
-O **Watchlog** é uma aplicação web que tem como objetivo auxiliar quem deseja estudar e compreender melhor o mundo de batalhas em duplas do jogo competitivo **Pokémon Champions**, sendo uma opção para que os usuários possam observar e analisar quais times, pokémon e setups que estão sendo utilizados nos mesmos.
+O **Watchlog** é uma aplicação web que tem como objetivo auxiliar quem deseja estudar e compreender melhor o mundo de batalhas em duplas do jogo competitivo **Pokémon Champions**, sendo uma opção para que os usuários possam observar e analisar quais times, pokémon e setups que estão sendo utilizados no meta-game atual.
 
 ## 2. Atores do Sistema
 

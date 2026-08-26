@@ -16,21 +16,40 @@ O **Watchlog** é uma aplicação web que tem como objetivo auxiliar quem deseja
 
 Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), escritas sob a perspectiva do usuário final.
 
-### 👤 Épico 1: Autenticação e Conta
+👤 Épico 1: Autenticação e Acesso
+- **US01 - Cadastro de Usuário:** Como um Visitante, quero preencher um formulário com meus dados para criar uma conta na aplicação e ter acesso às informações competitivas.
+  - _Critérios de Aceitação: Todos os campos obrigatórios devem ser preenchidos; o sistema deve validar os dados informados; o usuário deve ser cadastrado com sucesso quando as informações forem válidas.
+- **US02 - Acesso ao Sistema (Login):** Como um Usuário cadastrado, quero inserir meu e-mail e senha para acessar as informações completas da aplicação.
+  - _Critérios de Aceitação: O sistema deve validar as credenciais informadas; caso sejam inválidas, deve apresentar uma mensagem de erro; usuários não autenticados não devem ter acesso às informações protegidas.
+- **US03 - Encerrar Sessão (Logout):** Como um Usuário logado, quero encerrar minha sessão para sair da aplicação com segurança.
+  - _Critérios de Aceitação: Ao realizar o logout, o usuário deve perder o acesso às áreas protegidas e ser direcionado para a tela de login.
 
-- **US01 - Abertura de Conta:** Como um Visitante, quero preencher um formulário com meus dados pessoais (Nome, CPF, Senha) para criar uma nova conta no Roubank.
-  - _Critérios de Aceitação:_ O CPF deve ser validado; todos os campos são obrigatórios; a conta deve iniciar com saldo R$ 0,00.
-- **US02 - Acesso ao Sistema (Login):** Como um Cliente, quero inserir meu CPF e Senha para acessar meu painel financeiro.
+🏆 Épico 2: Pokémon no Meta
+- **US04 - Visualização de Pokémon no Meta:** Como um Usuário logado, quero visualizar os Pokémon mais utilizados no competitivo de duplas para conhecer os principais Pokémon presentes no meta.
+  - _Critérios de Aceitação:_ A aplicação deve apresentar uma lista de Pokémon; cada Pokémon deve apresentar sua porcentagem de utilização; os dados devem ser carregados dinamicamente.
+- **US05 - Visualização de Informações do Pokémon:** Como um Usuário logado, quero selecionar um Pokémon do meta para visualizar suas principais informações competitivas.
+  - _Critérios de Aceitação:_ O sistema deve apresentar informações como porcentagem de utilização, movimentos, habilidades e itens mais utilizados, quando disponíveis.
+- **US06 - Pesquisa de Pokémon:** Como um Usuário logado, quero pesquisar um Pokémon pelo nome para encontrar rapidamente suas informações competitivas.
+  - _Critérios de Aceitação:_ O sistema deve permitir a pesquisa pelo nome; caso nenhum Pokémon seja encontrado, deve apresentar uma mensagem informativa.
 
-### 💰 Épico 2: Movimentações Financeiras
+🧩 Épico 3: Times no Meta
+- **US07 - Visualização de Times no Meta:** Como um Usuário logado, quero visualizar os times mais utilizados no competitivo de duplas para conhecer as principais composições do cenário competitivo.
+  - _Critérios de Aceitação:_ A aplicação deve apresentar uma lista de times; cada time deve apresentar os Pokémon que fazem parte da composição e informações sobre sua utilização.
+- **US08 - Visualização de Detalhes do Time:** Como um Usuário logado, quero selecionar um time para visualizar sua composição completa e suas informações competitivas.
+  - _Critérios de Aceitação:_ O sistema deve apresentar os Pokémon que compõem o time e as informações disponíveis sobre sua utilização.
 
-- **US03 - Visualização de Saldo:** Como um Cliente logado, quero ver meu saldo total atualizado em destaque no painel principal, para saber quanto dinheiro (ainda) tenho.
-- **US04 - Realizar Depósito:** Como um Cliente, quero informar um valor para depositar na minha conta.
-  - _Critérios de Aceitação:_ O valor deve ser positivo; o sistema deve cobrar uma **"Taxa de Depósito" (ex: 2% do valor)** e creditar apenas o valor líquido na conta do cliente.
-- **US05 - Realizar Saque:** Como um Cliente, quero informar um valor para sacar da minha conta.
-  - _Critérios de Aceitação:_ O cliente não pode sacar mais do que o saldo disponível + limite; o sistema deve cobrar uma **"Taxa de Saque" (ex: R$ 5,00 fixos por saque)**, descontando o valor do saque + a taxa do saldo total.
+🥇 Épico 4: Resultados de Torneios
+- **US09 - Visualização de Torneios:** Como um Usuário logado, quero visualizar os torneios disponíveis para acompanhar os principais eventos do cenário competitivo.
+  - _Critérios de Aceitação:_ O sistema deve apresentar uma lista de torneios com informações básicas, como nome e data.
+- **US10 - Visualização de Resultados:** Como um Usuário logado, quero selecionar um torneio para visualizar seus principais resultados.
+ - _Critérios de Aceitação:_ O sistema deve apresentar os jogadores ou equipes participantes e suas respectivas colocações; os resultados devem ser carregados dinamicamente.
 
-### 📊 Épico 3: Histórico e Transparência
+📊 Épico 5: Dados Competitivos
+- **US11 - Consulta de Dados Competitivos:** Como um Usuário logado, quero que as informações de Pokémon, times e torneios sejam carregadas de uma fonte de dados, para consultar informações sem que elas estejam diretamente inseridas nas páginas.
+  - _Critérios de Aceitação:_ A aplicação deve realizar requisições assíncronas; os dados recebidos devem ser apresentados na interface; erros durante a requisição devem ser tratados e informados ao usuário.
 
-- **US06 - Visualizar Extrato:** Como um Cliente, quero visualizar uma lista (tabela ou cards) com o histórico de todas as minhas transações (depósitos e saques).
-  - _Critérios de Aceitação:_ A lista deve mostrar a data, o tipo de transação, o valor bruto e **o valor da taxa cobrada** pelo Roubank, deixando claro o quanto o cliente perdeu na operação.
+📱 Épico 6: Interface e Responsividade
+- **US12 - Acesso em Diferentes Dispositivos:** Como um Usuário, quero acessar a aplicação em diferentes tamanhos de tela para consultar as informações pelo computador ou celular.
+  - _Critérios de Aceitação:_ A interface deve ser responsiva; os componentes devem se adaptar às telas mobile e desktop; imagens, cards, tabelas e menus não devem ultrapassar os limites da tela.
+- **US13 - Visualização de Imagens dos Pokémon:** Como um Usuário logado, quero visualizar imagens dos Pokémon apresentados na aplicação para identificar visualmente cada Pokémon.
+  - _Critérios de Aceitação:_ Os Pokémon devem possuir imagens associadas aos seus dados; as imagens devem manter proporções adequadas; as imagens devem se adaptar ao tamanho dos componentes da interface.

@@ -1,3 +1,4 @@
+````mermaid
 erDiagram
     USUARIO ||--o{ POKEMON : consulta
     USUARIO ||--o{ TIME : consulta
@@ -40,3 +41,4 @@ erDiagram
         string jogador_ou_equipe
         string colocacao
     }
+```

@@ -17,7 +17,7 @@ O **Watchlog** é uma aplicação web que tem como objetivo auxiliar quem deseja
 Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), escritas sob a perspectiva do usuário final.
 
 **👤 Épico 1: Autenticação e Acesso**
-- **US01 - Cadastro de Usuário:** Como um Visitante, quero preencher um formulário com meus dados para criar uma conta na aplicação e ter acesso às informações competitivas.
+- **US01 - Cadastro de Usuário:** Como um Visitante, quero preencher um formulário com meus dados para criar uma conta na aplicação e ter acesso às informações competitivas. 
   _Critérios de Aceitação:_ Todos os campos obrigatórios devem ser preenchidos; o sistema deve validar os dados informados; o usuário deve ser cadastrado com sucesso quando as informações forem válidas.
 - **US02 - Acesso ao Sistema (Login):** Como um Usuário cadastrado, quero inserir meu e-mail e senha para acessar as informações completas da aplicação.
   _Critérios de Aceitação:_ O sistema deve validar as credenciais informadas; caso sejam inválidas, deve apresentar uma mensagem de erro; usuários não autenticados não devem ter acesso às informações protegidas.

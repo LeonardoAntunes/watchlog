@@ -24,10 +24,12 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ## 💻 Tecnologias e Dependências(Analisar Futuramente)
 
-- **Framework CSS:** MaterializeCSS
+- **Framework CSS:** Bootsrap
 - **JavaScript:**
   - **JQuery** - Para realizar animações e manipulação do DOM.
   - **JSON Server** - Para simular uma API REST.
+  - **Pokemon Champions Battle Data API** - Para acessar os dados de pokemons utilizados no meta atual e suas "build".
+  - **PokeApi** - Será usada para auxilixar a Pokemon Champions Battle Data API, ajudando a ter acesso as imagens deles e mais informações sobre os mesmos.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 

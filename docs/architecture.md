@@ -50,3 +50,13 @@ erDiagram
         string colocacao
     }
 ```
+
+## 2. Tecnologias Utilizadas
+
+Abaixo terão as especificações tecnicas do que será utilizado no projeto.
+
+- **Bootstrap** - v5.3
+- **JQuey** - v4.0.0
+- **JSON Server** - v1.0.0
+- **Pokemon Champions Battle Data API** - v1.0
+- **PokéApi** - v2.0

@@ -1,0 +1,31 @@
+{
+  "name": "watchlog",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo ajudar pessoas que querem entender mais sobre o universo competitivo de pokémon.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoAntunes/watchlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LeonardoAntunes/watchlog/issues"
+  },
+  "homepage": "https://github.com/LeonardoAntunes/watchlog#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
